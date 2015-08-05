@@ -1,2 +1,2 @@
 # Noisy
- NodeJS Framework for OAuth Server setup
+Unopinionated, minimalist node app boilerplate.

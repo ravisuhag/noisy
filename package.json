@@ -2,7 +2,7 @@
   "name": "noisy",
   "version": "1.0.0",
   "private": false,
-  "description": "Unopinionated, minimalist node app boilerplate.",
+  "description": "Unopinionated, minimalist node app boilerplate",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,12 +23,12 @@
   },
   "scripts": {
     "start": "gulp",
-    "test": "gulp test",
+    "test": "gulp test"
   },
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.13.3"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.0"
   }
 }
