@@ -1,3 +1,44 @@
+# OS
+# ===========
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node and related ecosystem
+# ==========================
+.nodemonignore
+.sass-cache/
+node_modules/
+app/tests/coverage/
+.bower-*/
+.idea/
+coverage/
+
+# MEAN.js app and assets
+# ======================
+public/dist/
+uploads
+config/env/local.js
+*.pem
+
+# General
+# =======
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.tmp
+*.bak
+*.swp
+logs/
+build/
+
+# Sublime editor
+# ==============
+.sublime-project
 *.sublime-project
 *.sublime-workspace
-node_modules
+
