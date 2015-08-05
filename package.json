@@ -1,0 +1,34 @@
+{
+  "name": "noisy",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Unopinionated, minimalist node app boilerplate.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravisuhag/noisy.git"
+  },
+  "author": "Ravi Suhag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravisuhag/noisy/issues"
+  },
+  "homepage": "https://github.com/ravisuhag/noisy#readme",
+  "engines": {
+    "node": ">=0.12.2",
+    "npm": ">=2.13.3"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp test",
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+  }
+}

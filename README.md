@@ -1,2 +1,2 @@
-# noisy
- App starter NodeJS, ExpressJS, MongoDB and Oauth
+# Noisy
+ NodeJS Framework for OAuth Server setup
