@@ -4,7 +4,7 @@ var convict = require('convict');
 var fs = require('fs');
 
 // Define a schema
-var conf = convict({
+var config = convict({
   env: {
     doc: 'The applicaton environment',
     format: ['production', 'development', 'test'],
@@ -14,15 +14,15 @@ var conf = convict({
 });
 
 // Load environment specific files
-conf.load(require('./env/default'));
-conf.load(require('./env/' + conf.get('env')));
+config.load(require('./env/default'));
+config.load(require('./env/' + config.get('env')));
 
 // Load local file if present
 if (fs.existsSync(__dirname + '/env/local.js')) {
-  conf.load(require('./env/local.js'));
+  config.load(require('./env/local.js'));
 }
 
 // Perform validation
-conf.validate();
+config.validate();
 
-module.exports = conf;
+module.exports = config;
