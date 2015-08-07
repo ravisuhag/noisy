@@ -1,9 +1,15 @@
-'use Strict';
+'use strict';
 
-var core = new require('express').Router();
-var core = require('../controllers/core.controller.js');
+var core = require('express').Router();
+var coreCtrl = require('../controllers/core.controller.js');
 
-// Home route
-core.get('/', core.home);
+module.exports = function(app) {
 
-module.exports = core;
+  // Home route
+  core.get('/', coreCtrl.home);
+
+  
+  // Mount core on express
+  app.use('/', core);
+
+};
